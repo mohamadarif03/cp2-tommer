@@ -151,6 +151,18 @@ def process_model(
     gpulauncher = find_launcher(cfg.launcher, tags=["slurm"])
     eval_launcher = find_launcher(cfg.eval_launcher, tags=["slurm"])
 
+    for launcher in (gpulauncher, eval_launcher):
+        launcher.environ.update({
+            "HF_HOME": os.environ.get("HF_HOME", str(Path.home() / "hf_cache")),
+            "HF_HUB_OFFLINE": "1",
+            "TRANSFORMERS_OFFLINE": "1",
+            "OMP_NUM_THREADS": "4",
+            "MKL_NUM_THREADS": "4",
+            "OPENBLAS_NUM_THREADS": "4",
+            "TOKENIZERS_PARALLELISM": "false",
+            **({"TOMMER_RESUME_CKPT": os.environ["TOMMER_RESUME_CKPT"]} if os.environ.get("TOMMER_RESUME_CKPT") else {}),
+        })
+
     logging.info(f"Launching Task using launcher: {gpulauncher}")
     # Submit the task and get the model loader
     loader = task.submit(launcher=gpulauncher)
@@ -166,7 +178,7 @@ def process_model(
     )
 
     # Add to tensorboard service
-    tb_service.add(task, task.runpath)
+    pass
 
     # Launch Flat benchmark evaluations
     for strat in cfg.flat_decoder_strategies:
@@ -329,7 +341,7 @@ def run(helper: ExperimentHelper, cfg: Configuration):
         folder.mkdir(exist_ok=True, parents=True)
 
     # Tensorboard service
-    tb_service = helper.xp.add_service(TensorboardService(runpath))
+    tb_service = None  # TensorBoard dimatikan
 
     ###### LLM Annotation ######
     # Launch LLM annotation task for each annotator

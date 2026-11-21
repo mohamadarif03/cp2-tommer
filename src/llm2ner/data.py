@@ -458,7 +458,7 @@ class NERDataset:
             num_workers = 0
         else:
             # if running on macOS with multiprocessing issues, set num_workers to 0
-            num_workers = min(int(os.environ.get("SLURM_CPUS_PER_TASK", 4)), 4)
+            num_workers = 0
 
         return DataLoader(
             batched_dataset,
@@ -685,7 +685,7 @@ class JSONDataSet(NERDataset):
             **kwargs
         )
         if isinstance(data, (str, Path)):
-            raw_data = json.load(open(data))
+            raw_data = json.load(open(data, encoding="utf-8"))
         else:
             #assume data is already a list of dicts
             assert all(isinstance(d, dict) for d in data), "data must be a path to a json file or a list of dictionaries"

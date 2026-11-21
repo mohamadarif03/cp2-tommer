@@ -23,6 +23,7 @@ logger = logging.getLogger(__name__)
 
 
 CLASS_TO_BLOCK_NAME = {
+    "Qwen2Model": "layers",
     "Qwen3Model": "layers",
     "LlamaModel": "layers",
     "GPTNeoXModel": "layers",
@@ -159,7 +160,7 @@ def load_llm(
         # hugginface in offline mode by default
         logger.info(f"Model {model_name} is in cache")
         # get config directly from HF
-        config = AutoConfig.from_pretrained(model_id)  # check if model exists
+        config = AutoConfig.from_pretrained(model_id, local_files_only=True)  # check if model exists
 
     else:
         logger.info(

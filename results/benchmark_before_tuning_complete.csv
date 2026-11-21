@@ -1,0 +1,115 @@
+Dataset / Bahasa,Rumpun Skrip,Model Variant,Decoding Strategy,Recall (%),Precision (%),F1-Score (%)
+MultiNERD,Latin (English),Model Rilis,THRESHOLD,98.58,21.63,35.48
+MultiNERD,Latin (English),Model Rilis,GREEDY,93.98,29.96,45.44
+MultiNERD,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,98.86,18.69,31.44
+MultiNERD,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,94.36,28.84,44.18
+MultiNERD,Latin (English),Layer 5 Distilasi,THRESHOLD,98.99,18.04,30.52
+MultiNERD,Latin (English),Layer 5 Distilasi,GREEDY,94.21,28.09,43.28
+WikiNeural,Latin (English),Model Rilis,THRESHOLD,97.83,20.65,34.11
+WikiNeural,Latin (English),Model Rilis,GREEDY,90.83,28.2,43.04
+WikiNeural,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,99.01,17.93,30.37
+WikiNeural,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,92.35,27.45,42.32
+WikiNeural,Latin (English),Layer 5 Distilasi,THRESHOLD,99.14,17.3,29.46
+WikiNeural,Latin (English),Layer 5 Distilasi,GREEDY,92.2,26.74,41.46
+CrossNER_AI,Latin (English),Model Rilis,THRESHOLD,97.06,35.04,51.49
+CrossNER_AI,Latin (English),Model Rilis,GREEDY,87.11,51.08,64.4
+CrossNER_AI,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,97.62,29.34,45.12
+CrossNER_AI,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,86.92,49.26,62.88
+CrossNER_AI,Latin (English),Layer 5 Distilasi,THRESHOLD,97.75,28.31,43.9
+CrossNER_AI,Latin (English),Layer 5 Distilasi,GREEDY,86.78,47.98,61.79
+CrossNER_politics,Latin (English),Model Rilis,THRESHOLD,97.02,32.31,48.48
+CrossNER_politics,Latin (English),Model Rilis,GREEDY,84.22,54.46,66.14
+CrossNER_politics,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,97.53,26.68,41.9
+CrossNER_politics,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,80.01,46.38,58.72
+CrossNER_politics,Latin (English),Layer 5 Distilasi,THRESHOLD,97.66,25.75,40.75
+CrossNER_politics,Latin (English),Layer 5 Distilasi,GREEDY,79.88,45.17,57.71
+CrossNER_science,Latin (English),Model Rilis,THRESHOLD,95.68,38.12,54.52
+CrossNER_science,Latin (English),Model Rilis,GREEDY,85.98,55.17,67.22
+CrossNER_science,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,96.58,32.36,48.47
+CrossNER_science,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,85.24,52.42,64.92
+CrossNER_science,Latin (English),Layer 5 Distilasi,THRESHOLD,96.71,31.05,47.0
+CrossNER_science,Latin (English),Layer 5 Distilasi,GREEDY,85.1,51.07,63.83
+CrossNER_music,Latin (English),Model Rilis,THRESHOLD,95.49,44.0,60.24
+CrossNER_music,Latin (English),Model Rilis,GREEDY,86.77,61.77,72.17
+CrossNER_music,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,96.84,36.0,52.49
+CrossNER_music,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,85.84,58.35,69.48
+CrossNER_music,Latin (English),Layer 5 Distilasi,THRESHOLD,96.97,34.74,51.15
+CrossNER_music,Latin (English),Layer 5 Distilasi,GREEDY,85.7,56.83,68.34
+GENIA_NER,Latin (English),Model Rilis,THRESHOLD,95.72,24.75,39.33
+GENIA_NER,Latin (English),Model Rilis,GREEDY,71.49,34.56,46.59
+GENIA_NER,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,96.6,21.17,34.73
+GENIA_NER,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,71.2,33.29,45.37
+GENIA_NER,Latin (English),Layer 5 Distilasi,THRESHOLD,96.73,20.43,33.73
+GENIA_NER,Latin (English),Layer 5 Distilasi,GREEDY,71.09,32.42,44.53
+CoNLL 2003,Latin (English),Model Rilis,THRESHOLD,94.81,33.53,49.54
+CoNLL 2003,Latin (English),Model Rilis,GREEDY,86.39,44.66,58.88
+CoNLL 2003,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,94.49,28.29,43.54
+CoNLL 2003,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,87.52,42.26,57.0
+CoNLL 2003,Latin (English),Layer 5 Distilasi,THRESHOLD,94.61,27.3,42.37
+CoNLL 2003,Latin (English),Layer 5 Distilasi,GREEDY,87.38,41.16,55.96
+CrossNER_literature,Latin (English),Model Rilis,THRESHOLD,94.43,40.21,56.4
+CrossNER_literature,Latin (English),Model Rilis,GREEDY,85.87,56.56,68.2
+CrossNER_literature,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,94.83,31.93,47.78
+CrossNER_literature,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,85.45,53.14,65.53
+CrossNER_literature,Latin (English),Layer 5 Distilasi,THRESHOLD,94.95,30.81,46.52
+CrossNER_literature,Latin (English),Layer 5 Distilasi,GREEDY,85.31,51.76,64.43
+ncbi,Latin (English),Model Rilis,THRESHOLD,91.97,12.64,22.23
+ncbi,Latin (English),Model Rilis,GREEDY,66.07,17.14,27.22
+ncbi,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,93.75,11.11,19.86
+ncbi,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,66.78,16.0,25.82
+ncbi,Latin (English),Layer 5 Distilasi,THRESHOLD,93.87,10.72,19.24
+ncbi,Latin (English),Layer 5 Distilasi,GREEDY,66.67,15.58,25.26
+Ontonotes,Latin (English),Model Rilis,THRESHOLD,73.08,25.52,37.83
+Ontonotes,Latin (English),Model Rilis,GREEDY,59.0,31.36,40.96
+Ontonotes,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,75.45,22.51,34.68
+Ontonotes,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,62.12,31.23,41.57
+Ontonotes,Latin (English),Layer 5 Distilasi,THRESHOLD,75.55,21.72,33.74
+Ontonotes,Latin (English),Layer 5 Distilasi,GREEDY,62.02,30.42,40.82
+FabNER,Latin (English),Model Rilis,THRESHOLD,73.65,30.11,42.75
+FabNER,Latin (English),Model Rilis,GREEDY,49.02,39.66,43.84
+FabNER,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,77.57,28.12,41.28
+FabNER,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,51.36,39.69,44.78
+FabNER,Latin (English),Layer 5 Distilasi,THRESHOLD,77.67,27.14,40.22
+FabNER,Latin (English),Layer 5 Distilasi,GREEDY,51.28,38.66,44.08
+ACE 2005,Latin (English),Model Rilis,THRESHOLD,41.96,28.71,34.09
+ACE 2005,Latin (English),Model Rilis,GREEDY,32.55,31.9,32.22
+ACE 2005,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,45.93,27.2,34.16
+ACE 2005,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,34.86,31.99,33.36
+ACE 2005,Latin (English),Layer 5 Distilasi,THRESHOLD,45.99,26.25,33.42
+ACE 2005,Latin (English),Layer 5 Distilasi,GREEDY,34.8,31.16,32.88
+IndoLEM_NER_UGM,Latin (Indonesia),Layer 5 Tanpa Distilasi,THRESHOLD,86.38,16.74,28.05
+IndoLEM_NER_UGM,Latin (Indonesia),Layer 5 Tanpa Distilasi,GREEDY,68.69,27.37,39.14
+IndoLEM_NER_UGM,Latin (Indonesia),Layer 5 Distilasi,THRESHOLD,87.93,15.36,26.16
+IndoLEM_NER_UGM,Latin (Indonesia),Layer 5 Distilasi,GREEDY,69.14,25.59,37.36
+IndoLEM_NER_UGM,Latin (Indonesia),Model Rilis,THRESHOLD,84.61,19.01,31.05
+IndoLEM_NER_UGM,Latin (Indonesia),Model Rilis,GREEDY,69.46,27.61,39.52
+IndoLEM_NER_UI,Latin (Indonesia),Layer 5 Tanpa Distilasi,THRESHOLD,97.48,21.82,35.66
+IndoLEM_NER_UI,Latin (Indonesia),Layer 5 Tanpa Distilasi,GREEDY,82.21,36.37,50.43
+IndoLEM_NER_UI,Latin (Indonesia),Layer 5 Distilasi,THRESHOLD,98.01,20.15,33.42
+IndoLEM_NER_UI,Latin (Indonesia),Layer 5 Distilasi,GREEDY,82.01,33.96,48.03
+IndoLEM_NER_UI,Latin (Indonesia),Model Rilis,THRESHOLD,96.51,24.76,39.41
+IndoLEM_NER_UI,Latin (Indonesia),Model Rilis,GREEDY,85.29,37.37,51.97
+WikiANN English,Latin (English),Layer 5 Tanpa Distilasi,THRESHOLD,68.28,23.73,35.21
+WikiANN English,Latin (English),Layer 5 Tanpa Distilasi,GREEDY,60.98,37.33,46.31
+WikiANN Arab,Non-Latin (Arabic),Layer 5 Tanpa Distilasi,THRESHOLD,37.04,8.25,13.5
+WikiANN Arab,Non-Latin (Arabic),Layer 5 Tanpa Distilasi,GREEDY,23.63,13.0,16.77
+WikiANN Mandarin,Non-Latin (CJK Mandarin),Layer 5 Tanpa Distilasi,THRESHOLD,48.67,13.1,20.65
+WikiANN Mandarin,Non-Latin (CJK Mandarin),Layer 5 Tanpa Distilasi,GREEDY,37.32,20.83,26.73
+WikiANN Jepang,Non-Latin (CJK Japanese),Layer 5 Tanpa Distilasi,THRESHOLD,63.23,15.53,24.93
+WikiANN Jepang,Non-Latin (CJK Japanese),Layer 5 Tanpa Distilasi,GREEDY,52.47,25.72,34.52
+WikiANN English,Latin (English),Layer 5 Distilasi,THRESHOLD,87.63,24.29,38.04
+WikiANN English,Latin (English),Layer 5 Distilasi,GREEDY,74.35,40.83,52.71
+WikiANN Arab,Non-Latin (Arabic),Layer 5 Distilasi,THRESHOLD,64.96,10.8,18.52
+WikiANN Arab,Non-Latin (Arabic),Layer 5 Distilasi,GREEDY,33.03,15.82,21.39
+WikiANN Mandarin,Non-Latin (CJK Mandarin),Layer 5 Distilasi,THRESHOLD,83.75,17.15,28.48
+WikiANN Mandarin,Non-Latin (CJK Mandarin),Layer 5 Distilasi,GREEDY,64.49,29.75,40.72
+WikiANN Jepang,Non-Latin (CJK Japanese),Layer 5 Distilasi,THRESHOLD,81.43,17.41,28.69
+WikiANN Jepang,Non-Latin (CJK Japanese),Layer 5 Distilasi,GREEDY,68.09,29.27,40.94
+WikiANN English,Latin (English),Model Rilis,THRESHOLD,84.64,32.74,47.22
+WikiANN English,Latin (English),Model Rilis,GREEDY,75.73,45.48,56.83
+WikiANN Arab,Non-Latin (Arabic),Model Rilis,THRESHOLD,62.5,15.06,24.27
+WikiANN Arab,Non-Latin (Arabic),Model Rilis,GREEDY,41.06,24.0,30.29
+WikiANN Mandarin,Non-Latin (CJK Mandarin),Model Rilis,THRESHOLD,75.92,24.1,36.59
+WikiANN Mandarin,Non-Latin (CJK Mandarin),Model Rilis,GREEDY,65.35,33.93,44.67
+WikiANN Jepang,Non-Latin (CJK Japanese),Model Rilis,THRESHOLD,71.85,24.22,36.23
+WikiANN Jepang,Non-Latin (CJK Japanese),Model Rilis,GREEDY,64.48,32.72,43.41

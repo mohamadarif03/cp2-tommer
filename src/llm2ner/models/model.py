@@ -971,9 +971,13 @@ class LNERModel(L.LightningModule):
     def training_step(self, batch, batch_idx):
         # We assume subclasses of NERmodel have a training_step method
         # but we need to pass the model explicitly as they currently expect it
-        loss = self.ner_model.training_step(
-            batch, self.llm_backbone, **self.training_step_kwargs
-        )
+        step_fn = self.training_step_kwargs.get("train_step_fn")
+        if step_fn is not None:
+            loss = step_fn(batch)
+        else:
+            loss = self.ner_model.training_step(
+                batch, self.llm_backbone, **self.training_step_kwargs
+            )
         self.log(
             "train/loss",
             loss,
@@ -1109,7 +1113,12 @@ def train_lightning(
     original_stdout = sys.stdout
     sys.stdout = sys.stderr
     try:
-        trainer.fit(lightning_model, train_loader, val_loader)
+        trainer.fit(
+            lightning_model,
+            train_loader,
+            val_loader,
+            ckpt_path=__import__("os").environ.get("TOMMER_RESUME_CKPT") or None,
+        )
     finally:
         sys.stdout = original_stdout
 

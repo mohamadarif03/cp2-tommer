@@ -417,6 +417,7 @@ class ToMMeR(NERmodel):
                 span_scores,
                 span_labels,
             )
+            loss = span_loss
         else:
             pos_weigths = torch.ones_like(span_scores)
             pos_weigths[span_labels == 1] = pos_weight
@@ -612,6 +613,7 @@ class ToMMeR(NERmodel):
 
         hist = train_lightning(
             self,
+            train_loader.dataset.model,
             train_loader=train_loader,
             val_loader=val_loader,
             optimizer=optimizer,

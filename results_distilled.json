@@ -1,0 +1,22 @@
+{
+  "threshold/CrossNER_science": {
+    "precision": 0.31045652393951284,
+    "recall": 0.9670502916585731,
+    "f1": 0.4700203020558523,
+    "true_pos": 6134,
+    "false_pos": 13624,
+    "total": 6343,
+    "total_spans": 1011450,
+    "n_samples": 1193
+  },
+  "greedy/CrossNER_science": {
+    "precision": 0.5106906338689586,
+    "recall": 0.8510168689880955,
+    "f1": 0.6383255437062864,
+    "true_pos": 5398,
+    "false_pos": 5172,
+    "total": 6343,
+    "total_spans": 1011450,
+    "n_samples": 1193
+  }
+}

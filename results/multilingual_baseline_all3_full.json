@@ -1,0 +1,152 @@
+{
+  "Mine-Llama-3.2-1B_L5_R64_phase0": {
+    "en": {
+      "greedy": {
+        "precision": 37.33,
+        "recall": 60.98,
+        "f1": 46.31
+      },
+      "threshold": {
+        "precision": 23.73,
+        "recall": 68.28,
+        "f1": 35.21
+      }
+    },
+    "ar": {
+      "greedy": {
+        "precision": 13.0,
+        "recall": 23.63,
+        "f1": 16.77
+      },
+      "threshold": {
+        "precision": 8.25,
+        "recall": 37.04,
+        "f1": 13.5
+      }
+    },
+    "zh": {
+      "greedy": {
+        "precision": 20.83,
+        "recall": 37.32,
+        "f1": 26.73
+      },
+      "threshold": {
+        "precision": 13.1,
+        "recall": 48.67,
+        "f1": 20.65
+      }
+    },
+    "ja": {
+      "greedy": {
+        "precision": 25.72,
+        "recall": 52.47,
+        "f1": 34.52
+      },
+      "threshold": {
+        "precision": 15.53,
+        "recall": 63.23,
+        "f1": 24.93
+      }
+    }
+  },
+  "Mine-Llama-3.2-1B_L5_R64_distilled": {
+    "en": {
+      "greedy": {
+        "precision": 40.83,
+        "recall": 74.35,
+        "f1": 52.71
+      },
+      "threshold": {
+        "precision": 24.29,
+        "recall": 87.63,
+        "f1": 38.04
+      }
+    },
+    "ar": {
+      "greedy": {
+        "precision": 15.82,
+        "recall": 33.03,
+        "f1": 21.39
+      },
+      "threshold": {
+        "precision": 10.8,
+        "recall": 64.96,
+        "f1": 18.52
+      }
+    },
+    "zh": {
+      "greedy": {
+        "precision": 29.75,
+        "recall": 64.49,
+        "f1": 40.72
+      },
+      "threshold": {
+        "precision": 17.15,
+        "recall": 83.75,
+        "f1": 28.48
+      }
+    },
+    "ja": {
+      "greedy": {
+        "precision": 29.27,
+        "recall": 68.09,
+        "f1": 40.94
+      },
+      "threshold": {
+        "precision": 17.41,
+        "recall": 81.43,
+        "f1": 28.69
+      }
+    }
+  },
+  "ToMMeR-Llama-3.2-1B_L6_R64": {
+    "en": {
+      "greedy": {
+        "precision": 45.48,
+        "recall": 75.73,
+        "f1": 56.83
+      },
+      "threshold": {
+        "precision": 32.74,
+        "recall": 84.64,
+        "f1": 47.22
+      }
+    },
+    "ar": {
+      "greedy": {
+        "precision": 24.0,
+        "recall": 41.06,
+        "f1": 30.29
+      },
+      "threshold": {
+        "precision": 15.06,
+        "recall": 62.5,
+        "f1": 24.27
+      }
+    },
+    "zh": {
+      "greedy": {
+        "precision": 33.93,
+        "recall": 65.35,
+        "f1": 44.67
+      },
+      "threshold": {
+        "precision": 24.1,
+        "recall": 75.92,
+        "f1": 36.59
+      }
+    },
+    "ja": {
+      "greedy": {
+        "precision": 32.72,
+        "recall": 64.48,
+        "f1": 43.41
+      },
+      "threshold": {
+        "precision": 24.22,
+        "recall": 71.85,
+        "f1": 36.23
+      }
+    }
+  }
+}

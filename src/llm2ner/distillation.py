@@ -156,12 +156,12 @@ def distill_step(
         return_tensors="pt",
         truncation=True,
     )
-    tokens = inputs["input_ids"].to(self.device)  # shape (batch, seq)
-    attn_mask = inputs["attention_mask"].to(self.device)
+    tokens = inputs["input_ids"].to(model.device)  # shape (batch, seq)
+    attn_mask = inputs["attention_mask"].to(model.device)
 
     gt_spans = batch[
         "pattern"
-    ].to(self.device)  # data must be in 'last' mode <-> patterns are span labels
+    ].to(model.device)  # data must be in 'last' mode <-> patterns are span labels
 
     # Forward pass through the teacher model
     with torch.no_grad():

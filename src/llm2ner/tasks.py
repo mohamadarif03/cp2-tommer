@@ -134,23 +134,34 @@ class LearnTokenMatching(Task):
         train_loader = train_dataset.get_loader(batch_size=self.batch_size)
         val_loader = val_dataset.get_loader(batch_size=self.batch_size)
 
-        hist = ner_model.manual_train(
-            train_loader,
-            val_loader,
-            epochs=self.epochs,
-            lr=self.lr,
-            grad_clip=self.grad_clip,
-            accumulation_steps=self.accumulation_steps,
-            patience=self.patience,
-            min_lr=self.min_lr,
-            # loss
-            pos_weight=self.pos_weight,
-            dilate_entities=self.dilate_entities,
-            # validation
-            n_val=self.n_val,
-            val_metric=self.val_metric,
-            log_dir=str(self.runpath),
-        )
+        import os
+
+        if os.environ.get("TOMMER_PHASE1_ONLY") == "1":
+            phase0_path = os.environ["TOMMER_PHASE0_WEIGHTS"]
+            logging.info("RESUME MODE: skipping Phase 0 training")
+            logging.info(f"Loading Phase 0 weights from {phase0_path}")
+            ner_model.load_state_dict(
+                torch.load(phase0_path, map_location="cpu", weights_only=True)
+            )
+            ner_model.pos_weight = self.pos_weight
+            ner_model.dilate_entities = self.dilate_entities
+            hist = []
+        else:
+            hist = ner_model.manual_train(
+                train_loader,
+                val_loader,
+                epochs=self.epochs,
+                lr=self.lr,
+                grad_clip=self.grad_clip,
+                accumulation_steps=self.accumulation_steps,
+                patience=self.patience,
+                min_lr=self.min_lr,
+                pos_weight=self.pos_weight,
+                dilate_entities=self.dilate_entities,
+                n_val=self.n_val,
+                val_metric=self.val_metric,
+                log_dir=str(self.runpath),
+            )
 
 
         # If self distillation is enabled, run it

@@ -1,28 +1,46 @@
-/env
-.DS_Store
-.vscode/
+# Virtual environments
+/env/
 .venv/
 venv/
+ENV/
+env.bak/
+venv.bak/
+
+# System & IDE files
+.DS_Store
+.vscode/
+.idea/
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+*/*/.ipynb_checkpoints/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.bak
+*.bak2
+*.backup
+
+# Logs & Monitoring
+*.log
+memlog.txt
+
+# Large training checkpoints and temporary run workspaces (>1 GB)
+xpm-workspace/
+xpm-workspace-*/
+checkpoints/
+*.ckpt
+runs/
+local/
+plots/
 
 # Build artifacts
 build/
 dist/
 *.egg-info/
-
-# If you use setuptools/pip install -e .
 .eggs/
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-## local folders
-plots/
-checkpoints/
-datasets/
+# Other local / temporary folders
 annot_data/
-plots/
-runs/
-local/
 GEMINI.md
