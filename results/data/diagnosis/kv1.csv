@@ -1,0 +1,6 @@
+set,n,KV1_pct_sah,ci95
+UNER_PUD_en,18,94.4,10.6
+UNER_PUD_zh,74,77.0,9.6
+UNER_PUD_ja,67,88.1,7.8
+UNER_GSDSIMP_zh,60,88.3,8.1
+KLUE_ko,150,82.7,6.1

@@ -1,0 +1,48 @@
+{
+ "init": "release",
+ "data": "Campur_mr",
+ "cara": "distil",
+ "args": {
+  "init": "release",
+  "data": "Campur_mr",
+  "folder_data": "NER_DATA_L4",
+  "llm2ner": "llm2ner_l4",
+  "out": "lanjut4/mr",
+  "cara": "distil",
+  "guru_ambang": 0.9,
+  "epochs": 1,
+  "lr": 0.001,
+  "batch_size": 16,
+  "grad_clip": 2.0,
+  "patience": 5000,
+  "min_lr": 5e-05,
+  "n_val": 3000,
+  "val_limit": 1000,
+  "max_length": 1500,
+  "ikut_kosong": true,
+  "seed": 0,
+  "uji_cepat": false,
+  "timpa": false
+ },
+ "menit": 32.7,
+ "langkah": 11048,
+ "kelas": "ToMMeR",
+ "dev_sebelum": {
+  "precision": 0.26062252964419724,
+  "recall": 0.9206826335683886,
+  "f1": 0.4062466539573747,
+  "true_pos": 9495.0,
+  "false_pos": 26937.0,
+  "total": 10313.0,
+  "total_spans": 3251536.0
+ },
+ "dev_sesudah": {
+  "precision": 0.2074089446922886,
+  "recall": 0.9690681663909928,
+  "f1": 0.34168689237403177,
+  "true_pos": 9994.0,
+  "false_pos": 38191.0,
+  "total": 10313.0,
+  "total_spans": 3251536.0
+ }
+}

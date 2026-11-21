@@ -1,0 +1,13 @@
+keputusan,set,selisih,ukuran,nilai,lo,hi,hasil,porsi_tidak_ada,lo_tidak_ada,hi_tidak_ada,porsi_batas,lo_batas,hi_batas,poin_terlalu_panjang,poin_terlalu_pendek,poin_bersilangan,poin_tepi_lain,poin_tidak_ada_tebakan,emas_nonPLO_berangka_pct,emas_PLO_berangka_pct
+D1,UNER_PUD_ko,ko − ja,porsi tebakan lepas berangka (poin %),7.33,6.46,8.2,terbukti,,,,,,,,,,,,,
+D1_pembanding,UNER_PUD_ko,ko − kontrol,porsi tebakan lepas berangka (poin %),4.14,3.35,4.86,terbukti,,,,,,,,,,,,,
+D2,UNER_PUD_ko,ja − ko,selisih emas benar (poin R),1.19,nan,nan,sesuai dugaan K (salah batas),-14.29,-169.27,28.57,114.29,71.43,269.27,-0.03,1.22,0.17,0.0,-0.17,,
+D3,KLUE_ko,ko − ja,selisih emas benar (poin R),2.07,nan,nan,sesuai dugaan K (salah batas),-95.52,-162.3,-61.07,195.52,161.07,262.3,4.99,-0.93,-0.01,0.0,-1.98,,
+D3,JA_STOCKMARK_test,ja − zhA,selisih emas benar (poin R),5.25,nan,nan,sesuai dugaan K (salah batas),33.33,15.51,51.32,66.67,48.68,84.49,1.04,2.46,0.0,0.0,1.75,,
+-,UNER_PUD_ja,ja − zhA,selisih emas benar (poin R),1.07,nan,nan,pembanding,29.73,-100.0,120.16,70.27,-20.16,200.0,-0.46,1.13,0.09,0.0,0.32,,
+-,UNER_PUD_zh,zhA − ja,selisih emas benar (poin R),0.44,nan,nan,pembanding,6.67,-300.0,328.33,93.33,-228.33,400.0,0.76,-0.35,0.0,0.0,0.03,,
+-,MSRA_zh,ko − zhA,selisih emas benar (poin R),0.49,nan,nan,pembanding,-114.63,-1216.42,681.87,214.63,-581.88,1316.42,1.29,-0.25,0.02,0.0,-0.56,,
+D4,KLUE_ko,kontrol,recall emas non-PLO (DT/TI/QT),36.83,nan,nan,cek,,,,,,,,,,,,79.63,0.91
+D4,KLUE_ko,zhA,recall emas non-PLO (DT/TI/QT),30.12,nan,nan,cek,,,,,,,,,,,,79.63,0.91
+D4,KLUE_ko,ja,recall emas non-PLO (DT/TI/QT),27.86,nan,nan,cek,,,,,,,,,,,,79.63,0.91
+D4,KLUE_ko,ko,recall emas non-PLO (DT/TI/QT),83.93,nan,nan,cek,,,,,,,,,,,,79.63,0.91

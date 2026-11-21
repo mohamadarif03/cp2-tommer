@@ -1,0 +1,11 @@
+model,set,emas,tertimpa,pct_tertimpa,KV2_pendek_juga_keluar,KV2_bukan_akhir
+release,UNER_PUD_en,1075,282,26.23,92.91,92.91
+release,UNER_PUD_zh,1139,404,35.47,79.7,79.7
+release,UNER_PUD_ja,1150,299,26.0,75.25,75.25
+release,UNER_GSDSIMP_zh,763,247,32.37,74.49,74.49
+release,KLUE_ko,8249,3196,38.74,66.21,66.2
+fixed,UNER_PUD_en,1075,356,33.12,96.35,96.35
+fixed,UNER_PUD_zh,1139,593,52.06,92.24,92.24
+fixed,UNER_PUD_ja,1150,492,42.78,90.24,90.24
+fixed,UNER_GSDSIMP_zh,763,357,46.79,87.39,87.39
+fixed,KLUE_ko,8249,4104,49.75,74.9,74.9

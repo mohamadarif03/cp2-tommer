@@ -1,0 +1,11 @@
+dataset,sistem,kalimat,n_kalimat,P,R,F1,ci_F1,TP,tebakan,emas
+UNER_PUD_en,ToMMeR_threshold,semua,1000,17.61,96.93,29.81,1.66,1042,5917,1075
+UNER_PUD_en,ToMMeR_threshold,ber_entitas,585,26.79,96.93,41.97,1.63,1042,3890,1075
+UNER_PUD_en,ToMMeR_greedy,semua,1000,22.58,87.35,35.88,2.04,939,4159,1075
+UNER_PUD_en,ToMMeR_greedy,ber_entitas,585,34.66,87.35,49.63,1.99,939,2709,1075
+UNER_PUD_en,XLM-R_A_semua_label,semua,1000,68.06,93.95,78.94,2.1,1010,1484,1075
+UNER_PUD_en,XLM-R_A_semua_label,ber_entitas,585,75.32,93.95,83.61,1.93,1010,1341,1075
+UNER_PUD_en,XLM-R_A_tanpa_MISC,semua,1000,87.21,90.7,88.92,1.87,975,1118,1075
+UNER_PUD_en,XLM-R_A_tanpa_MISC,ber_entitas,585,89.29,90.7,89.99,1.82,975,1092,1075
+UNER_PUD_en,XLM-R_B_semua_label,semua,1000,67.2,93.21,78.1,2.18,1002,1491,1075
+UNER_PUD_en,XLM-R_B_semua_label,ber_entitas,585,74.33,93.21,82.71,2.03,1002,1348,1075
